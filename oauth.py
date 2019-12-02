@@ -34,7 +34,7 @@ def oauth_callback():
     print()
     print('You need to put:\nOAUTH_TOKEN=%s\nin your BOT_IDENTITY section of your config.py.' % token)
     threading.Timer(3.0, lambda:os.kill(os.getpid(), signal.SIGTERM)).start()
-    return '<html><body>You need to put:<br/>OAUTH_TOKEN=%s<br/>in your BOT_IDENTITY section of your config.py.</body></html>' % token
+    return '<html><body>You need to put:<br/>'token':'%s'<br/>in your BOT_IDENTITY section of your config.py.</body></html>' % token
 
 print('Welcome to the gitter oauth 2 authenticator for err.')
 print()
